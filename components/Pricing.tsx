@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { DEMO_HREF } from "@/lib/site";
 
 const items = [
   "Tous les modules : dossiers, calendrier, tâches Kanban, facturation Facturo, analytique",
@@ -28,7 +29,7 @@ export default function Pricing() {
               <p className="mt-3 text-4xl font-bold">Sur devis</p>
               <p className="mt-2 text-sm text-slate-400">Par cabinet, selon le nombre d&apos;utilisateurs.</p>
               <a
-                href="#demo"
+                href={DEMO_HREF}
                 className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-[#3b82f6] px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
               >
                 Demander une démonstration

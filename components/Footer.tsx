@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LOGIN_URL, CONTACT_EMAIL } from "@/lib/site";
+import { LOGIN_URL, CONTACT_EMAIL, DEMO_HREF } from "@/lib/site";
 import { Logo } from "./Navbar";
 
 export default function Footer() {
@@ -31,7 +31,7 @@ export default function Footer() {
             <ul className={col}>
               <li><Link className={a} href="/privacy">Politique de confidentialité</Link></li>
               <li><Link className={a} href="/terms">Conditions Générales d&apos;Utilisation</Link></li>
-              <li><Link className={a} href="/#demo">Demander une démonstration</Link></li>
+              <li><a className={a} href={DEMO_HREF}>Demander une démonstration</a></li>
               <li><a className={a} href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></li>
             </ul>
           </div>

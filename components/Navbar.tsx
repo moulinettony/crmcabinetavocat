@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X, Landmark } from "lucide-react";
-import { LOGIN_URL } from "@/lib/site";
+import { LOGIN_URL, DEMO_HREF } from "@/lib/site";
 
 const links = [
   { href: "/#fonctionnalites", label: "Fonctionnalités" },
@@ -60,7 +60,7 @@ export default function Navbar() {
             Se connecter
           </a>
           <Link
-            href="/#demo"
+            href={DEMO_HREF}
             className="hidden rounded-lg bg-[#3b82f6] px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-500"
           >
             Demander une démo
@@ -94,7 +94,7 @@ export default function Navbar() {
               Se connecter
             </a>
             <Link
-              href="/#demo"
+              href={DEMO_HREF}
               onClick={() => setOpen(false)}
               className="rounded-lg bg-[#3b82f6] px-4 py-2.5 text-center text-sm font-semibold text-white"
             >

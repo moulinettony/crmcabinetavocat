@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
-import { LOGIN_URL } from "@/lib/site";
+import { LOGIN_URL, DEMO_HREF } from "@/lib/site";
 import DashboardMockup from "./DashboardMockup";
 
 export default function Hero() {
@@ -33,7 +33,7 @@ export default function Hero() {
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="#demo"
+              href={DEMO_HREF}
               className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#3b82f6] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/25 transition hover:bg-blue-500 sm:w-auto"
             >
               Réserver une démonstration
